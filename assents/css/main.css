@@ -1,0 +1,200 @@
+:root {
+  --main-color: #2196f3;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.game {
+  background-color: #eee;
+  min-height: 100vh;
+  padding-bottom: 15px;
+}
+.container {
+  margin: auto;
+  max-width: 900px;
+}
+
+.name {
+  background-color: var(--main-color);
+  color: white;
+  padding: 20px;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.message {
+  background-color: white;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.message span {
+  font-weight: bold;
+  color: #009688;
+}
+
+.message span::after {
+  content: " ]";
+}
+
+.message span::before {
+  content: "[ ";
+}
+
+.select-lvl {
+  border: 1px solid #eee;
+  padding: 10px 48px;
+  margin: 17px auto;
+  display: block;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+
+.select-lvl:focus-visible {
+  outline: none;
+  border: none;
+}
+
+button, .create-new-level {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #009688;
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+  border:none;
+  outline: none;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+
+.add-new-lvl {
+  padding: 15px;
+  background-color: var(--main-color);
+}
+
+.the-word {
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  color: var(--main-color);
+  user-select: none;
+}
+
+.input {
+  margin: 25px 0;
+  width: 100%;
+  display: none;
+  padding: 15px;
+  border: 1px solid rgb(182, 182, 182);
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 10px;
+  caret-color: var(--main-color);
+  outline: none;
+}
+.input:focus-visible {
+  border: 1px solid var(--main-color);
+}
+
+.upcoming-words {
+  background-color: white;
+  margin: 15px 0;
+  padding: 15px;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.upcoming-words div {
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+  margin: 4px;
+  padding: 10px;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+
+.control {
+  display: none;
+  justify-content:space-between;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+
+}
+
+.control span {
+  font-weight: bold;
+  color: #009688;
+}
+
+.finish {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  padding: 15px;
+}
+
+.finish .good {
+  color: var(--main-color);
+}
+
+.finish .bad {
+  color: red;
+}
+
+.description {
+  background: #fff;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.description .child:nth-child(even) {
+  border: 1px solid #eee
+}
+
+.description .child:nth-child(odd) {
+  box-shadow: 0px 1px 10px #eee;
+}
+
+.description  div{
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 20px;
+  text-transform: capitalize;
+}
+
+.form {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 15px;
+  display: none;
+}
+
+.form-input {
+  display: block;
+  margin: 15px auto;
+  padding: 10px 20px;
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid rgb(195, 195, 195);
+  outline: none;
+}

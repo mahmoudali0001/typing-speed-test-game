@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\..\\WorkSpace"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Typing Speed Test Game"
+	}
+}

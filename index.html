@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed Test Game</title>
+    <link rel="stylesheet" href="./assents/css/main.css"/>
+  </head>
+  <body>
+    <div class="game">
+      <div class="name">Typing Speed Test Game</div>
+      <div class="container">
+        <div class="message">
+          You Are Playing On 
+          <span class="lvl"></span> Level & You Have <span class="seconds"></span> Seconds To Type The Word
+        </div>
+        <div class="description"></div>
+        <select class="select-lvl">
+          <option>Easy</option>
+          <option>Normal</option>
+          <option>Hard</option>
+        </select>
+        <button class="start">Start Playing</button>
+        <div class="the-word"></div>
+        <input type="text" class="input" />
+        <div class="upcoming-words">Words Will Show Here</div>
+        <div class="control">
+          <div class="time">Time Left: <span></span> Seconds</div>
+          <div class="score">Score: <span class="got">0</span> From <span class="total"></span></div>
+        </div>
+        <div class="finish"></div>
+        <button class="add-new-lvl">Add New Level</button>
+        <form class="form">
+          <input  type="text" class="form-input enter-name" placeholder="Enter Level Name"/>
+          <input  type="text" class="form-input enter-seconds" placeholder="Enter Seconds"/>
+          <input  type="text" class="form-input enter-length" placeholder="Enter Length"/>
+          <input class="create-new-level" type="button"  value="Create"/>
+        </form>
+      </div>
+    </div>
+      <script src="./assents/js/main.js"></script>
+  </body>
+</html>
